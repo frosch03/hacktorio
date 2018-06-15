@@ -12,11 +12,8 @@ import qualified Data.HashMap as HM hiding ((!))
 import Data.List (intercalate, groupBy, sortOn)
 import Text.Regex.PCRE ((=~))
 import Control.Arrow ((>>>), (&&&), arr)
--- import Data.Text (Text)
-import System.IO.Unsafe
 import Data.List
 
--- import qualified Data.Graph.Inductive.Graph as G
 import Data.Graph.Inductive.Graph
 import Data.Graph.Inductive.PatriciaTree
 
@@ -57,44 +54,7 @@ instance FromJSON Product
 instance FromJSON Recipe
 instance FromJSON Recipes
 
--- | The type 'BuildG' holds a directed graph that describes how to
--- build an item. An item corresponds to a vertex of the graph. The
--- edges directed and weighted. The first element of the tuple
--- corresponds to the item to be build, the second to the item that is
--- needed. The weight corresponds to the amount of needed items.
-
-
--- data BuildG
---     = BuG
---       { edges    :: [String]
---       , vertices :: [((String, String), Float)]
---       }
-
-
--- lableNodesOfBG :: BuildG -> HM.Map String G.Node
--- lableNodesOfBG bg
---     = foldr (\nxt result -> HM.insert (snd nxt) (fst nxt) result) HM.empty $ zip [1..] (edges bg)
-
--- reverseLableNodesOfBG :: BuildG -> HM.Map G.Node String
--- reverseLableNodesOfBG bg
---     = foldr (\nxt result -> HM.insert (fst nxt) (snd nxt) result) HM.empty $ zip [1..] (edges bg)
-
--- getFGLedgesFromBG :: BuildG -> [G.LEdge Float]
--- getFGLedgesFromBG bg
---     = map (\((i, o), w) -> (lns!i, lns!o, w)) $ vertices bg
---     where
---       lns = lableNodesOfBG bg
-
-
--- bugToGr :: (G.Graph gr) => BuildG -> gr String Float
--- bugToGr bug
---     = G.mkGraph lnodes ledges
---     where
---       ledges = getFGLedgesFromBG bug
---       lnodes = zip [(1 :: Int)..] (edges bug) :: [G.LNode String]
-
--- | This function should turn a recipe into an edge of our weighted
--- directed graph BuG.
+-- | This function should turn a recipe into a list of weighted edges.
 --
 -- λ> recipeToEdges = 
 -- λ> :t recipeToEdges
@@ -129,22 +89,7 @@ reciep g
       lg   = lab g
       recp = (\n -> (fromJust $ lg n, map (\(nn, na) -> (na, fromJust $ lg nn)) $ lpre g n))
 
--- recipesToBuG :: [Recipe] -> BuildG
--- recipesToBuG rs
---     = BuG es vs
---     where
---       normrs = rs `with` ((== 1) . length . products)
---       es = map name normrs
---       vs = concatMap recipeToEdges normrs
-
     
-count :: Gr String Float -> Int
-count gr
-    = size gr
-
-times :: Float -> Ingredient -> Ingredient
-times i (Ingredient n a t) = Ingredient n (i * a) t
-
 type RecipeHM = HM.Map String Recipe
 
 toHMrecipe :: [Recipe] -> RecipeHM
@@ -168,7 +113,6 @@ totalRaw' rhm (fac, itm)
 
     | otherwise
     = let p     = (product_amount . head . products . fromJust $ lookupResult)
-          -- ingrs = (ingredients . fromJust $ lookupResult)
       in totalRaw'' rhm $ map (\i -> (fac * ((ingredient_amount i) / p), ingredient_name i)) (ingredients . fromJust $ lookupResult)
     where
       lookupResult = HM.lookup itm rhm 
@@ -180,49 +124,8 @@ totalRaw rhm itm
       tmp1 = totalRaw' rhm (1, itm)
       tmp2 = groupBy (\a b -> snd a == snd b) $ sortOn snd tmp1
 
+             
 
--- type Weight = Float
--- type Node = String
--- type Edge = (Node, Node, Weight)
-    
--- data Graph
---     = Graph
---       { nodes :: [Node]
---       , edges :: [Edge]
---       }
-
-
-
---graphFromRecipes :: Recipes -> Graph
--- graphFromRecipes (Recipes rs)
---     = error "no"
---     where
---       edgs = map fn nodes
---       rs_  = rs `with` (length . products >>> (==1))
---       nodes = zip [0..] rs_
---       nodeOfLabel lbl = fst . head $ filter (\(_, name) -> lbl == name) nodes
---       fn = (\(_ , itm) -> [ (nodeOfLabel $ product_name from, nodeOfLabel $ ingredient_name to, weight)
---                          | from <- products itm
---                          , to <- ingredients itm
---                          , let weight = (ingredient_amount to)/(product_amount from)
---                          ])
-
--- xs = ingredients . head $ rs `with` (name >>> (== "inserter"))
--- map (\x -> ingredients . head $ (rs `without` (products >>> map product_name >>> map ((=~ (".*ore.*")) :: String -> Bool) >>> minimum)) `with` (name >>> (== (ingredient_name x)))) xs
-
-
--- λ> map (\x -> (rs `with` (name >>> (== (ingredient_name x))))) xs
--- [[(1.0x iron-ore) -3.5-> (1.0x iron-plate)],[(2.0x iron-plate) -0.5-> (1.0x iron-gear-wheel)],[(1.0x iron-plate + 3.0x copper-cable) -0.5-> (1.0x electronic-circuit)]]
--- λ> map (\x -> (rs `with` (name >>> (== (ingredient_name x))) `without` (ingredients >>> map ingredient_name >>> map ((=~ (".*ore.*")) :: String -> Bool) >>> maximum))) xs
--- [[],[(2.0x iron-plate) -0.5-> (1.0x iron-gear-wheel)],[(1.0x iron-plate + 3.0x copper-cable) -0.5-> (1.0x electronic-circuit)]]
-
-
-
--- fn :: [Recipe] -> String -> [String] -> [String]
--- fn rs cur_name result
---    =
---     where
---       inps = ingredients . head $ rs `without` (name >>> (=~ (".*ore.*"))) `with` (name >>> (== cur_name))
 
 getJSON :: IO ByteString
 getJSON = BSL.readFile "/tmp/export.json"
@@ -267,7 +170,7 @@ main = do
 
 -- rs `with` (name >>> (=~ ".*nuclear.*")
 
--- (Right (Recipes recipes)) <- (eitherDecode <$> getJSON) :: IO (Either String Recipes)
+-- (Right (Recipes rs)) <- (eitherDecode <$> getJSON) :: IO (Either String Recipes)
 -- filter (\(Recipe _ _ ((Product _ e):ous)) -> e < 0.5) rs
 
 
