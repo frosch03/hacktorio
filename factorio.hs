@@ -14,6 +14,8 @@ import Text.Regex.PCRE ((=~))
 import Control.Arrow ((>>>), (&&&), arr)
 import Data.List
 
+import Control.Monad.Reader
+
 import Data.Graph.Inductive.Dot
     
 import Data.Graph.Inductive.Graph
@@ -58,6 +60,10 @@ instance FromJSON Ingredient
 instance FromJSON Product
 instance FromJSON Recipe
 instance FromJSON Recipes
+
+
+
+
 
 -- | This function should turn a recipe into a list of weighted edges.
 --
@@ -130,7 +136,7 @@ simplify
 combAmnt :: HM.Map Node (Adj Float) -> [(Float, Node)] -> [(Float, Node)]
 combAmnt solemap inp
    | inp == result
-   = inp
+       = inp
 
    | otherwise
    = result
@@ -140,12 +146,6 @@ combAmnt solemap inp
       fun (f1, Nothing)    = [f1]
       fun (f1, Just (f2s)) = concat [ combAmnt solemap [(fst f1 * xf, xn)] | (xf, xn) <- f2s]
 
--- test (Node _ [])
---     = 
-
-
--- test (Node rl sf)
---     = 
 
 delEdgesOf :: DynGraph g => [String] -> g String Float -> g String Float
 delEdgesOf atms g
@@ -175,19 +175,19 @@ withouthAtoms atms (_, _, nam, adj)
 
 apre :: Graph gr => gr String Float -> Node -> [Node]
 apre g nd
-    = fix (pre g) [nd]
+    = fixPt (pre g) [nd]
 
 asuc :: Graph gr => gr String Float -> Node -> [Node]
 asuc g nd
-    = fix (suc g) [nd]
+    = fixPt (suc g) [nd]
 
-fix :: (Node -> [Node]) -> [Node] -> [Node]
-fix fn nds
+fixPt :: (Node -> [Node]) -> [Node] -> [Node]
+fixPt fn nds
     | nub nds == result
     = nub nds
       
     | otherwise
-    = fix fn result
+    = fixPt fn result
     where
       result = nub $ nds ++ concatMap fn nds
 
@@ -237,8 +237,8 @@ totalRaw rhm itm
              
 
 
-getJSON :: IO ByteString
-getJSON = BSL.readFile "/tmp/export.json"
+getJSON :: String -> IO ByteString
+getJSON filename = BSL.readFile filename
 
 
 instance Show Ingredient where
@@ -272,19 +272,48 @@ without rs rfltr
 
 
 
-main :: IO ()
+
+
+
+
+data Arguments
+    = Arg
+      { inputFile :: String
+      , atoms :: [String]
+      }
+    deriving (Show)
+
+data Command
+    = CreateDot
+      { nodeId :: Node }
+
+    | NameFromId
+      { nodeId :: Node }
+
+    | IdFromName
+      { nodeName :: String }
+
+type Env = ReaderT Arguments IO
+type Prog = ReaderT Command Env
+    
+main :: Prog ()
 main = do
-  (Right (Recipes rs)) <- (eitherDecode <$> getJSON) :: IO (Either String Recipes)
-  print $ length rs
-  return ()
-
--- rs `with` (name >>> (=~ ".*nuclear.*")
-
--- (Right (Recipes rs)) <- (eitherDecode <$> getJSON) :: IO (Either String Recipes)
--- filter (\(Recipe _ _ ((Product _ e):ous)) -> e < 0.5) rs
-
-
-
--- main :: IO ()
--- main = do
---   (Right (Recipes recipes)) <- (eitherDecode <$> getJSON) :: IO (Either String Recipes))
+  filename <- lift $ asks inputFile
+  atoms <- lift $ asks atoms
+  (Right (Recipes rs)) <- liftIO $ (eitherDecode <$> (getJSON filename))
+  cmd <- ask
+  result <- (case cmd of
+            (CreateDot nd) -> do
+              let ig  = itemRecipesToGraph rs
+                  dot = showDot (fglToDot $ delEdgesOf atoms $ subgraph (xdfsWith (withouthAtoms atoms) (\(_, x, _, _) -> x) [nd] ig) ig)
+              liftIO $ writeFile ("/tmp/" ++ (fromJust $ lab ig nd) ++ ".dot") dot
+            (NameFromId nd) -> do
+              let ig  = itemRecipesToGraph rs
+              liftIO . putStrLn . show . lab ig $ nd
+            (IdFromName nn) -> do
+              let ig  = itemRecipesToGraph rs
+                  gn  = (\nme -> filter ((== nme) . snd) $ labNodes ig)
+              liftIO . putStrLn . show . fmap fst . listToMaybe . gn $ nn
+           )
+  return result
+      
