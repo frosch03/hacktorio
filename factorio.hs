@@ -20,7 +20,7 @@ import Data.Graph.Inductive.Dot
     
 import Data.Graph.Inductive.Graph
 import Data.Graph.Inductive.PatriciaTree
-import Data.Graph.Inductive.Query.BFS
+-- import Data.Graph.Inductive.Query.BFS
 import Data.Graph.Inductive.Query.DFS
 
     
@@ -299,13 +299,13 @@ type Prog = ReaderT Command Env
 main :: Prog ()
 main = do
   filename <- lift $ asks inputFile
-  atoms <- lift $ asks atoms
+  atms <- lift $ asks atoms
   (Right (Recipes rs)) <- liftIO $ (eitherDecode <$> (getJSON filename))
   cmd <- ask
   result <- (case cmd of
             (CreateDot nd) -> do
               let ig  = itemRecipesToGraph rs
-                  dot = showDot (fglToDot $ delEdgesOf atoms $ subgraph (xdfsWith (withouthAtoms atoms) (\(_, x, _, _) -> x) [nd] ig) ig)
+                  dot = showDot (fglToDot $ delEdgesOf atms $ subgraph (xdfsWith (withouthAtoms atms) (\(_, x, _, _) -> x) [nd] ig) ig)
               liftIO $ writeFile ("/tmp/" ++ (fromJust $ lab ig nd) ++ ".dot") dot
             (NameFromId nd) -> do
               let ig  = itemRecipesToGraph rs
