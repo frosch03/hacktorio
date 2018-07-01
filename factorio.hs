@@ -1,4 +1,4 @@
-{-# LANGUAGE NoMonomorphismRestriction, DeriveGeneric #-}
+{-# LANGUAGE NoMonomorphismRestriction, DeriveGeneric, DeriveDataTypeable #-}
 {-# OPTIONS_GHC -fprint-potential-instances #-}
 module Factorio
 where
@@ -17,11 +17,11 @@ import Data.List
 import Control.Monad.Reader
 
 import Data.Graph.Inductive.Dot
-    
 import Data.Graph.Inductive.Graph
 import Data.Graph.Inductive.PatriciaTree
--- import Data.Graph.Inductive.Query.BFS
 import Data.Graph.Inductive.Query.DFS
+
+import System.Console.CmdArgs hiding (name)
 
     
 data Type
@@ -276,12 +276,12 @@ without rs rfltr
 
 
 
-data Arguments
-    = Arg
+data Environment
+    = Environment
       { inputFile :: String
       , atoms :: [String]
       }
-    deriving (Show)
+    deriving (Show, Data, Typeable)
 
 data Command
     = CreateDot
@@ -293,14 +293,37 @@ data Command
     | IdFromName
       { nodeName :: String }
 
-type Env = ReaderT Arguments IO
+    | CombinedAmount
+      { nodeId :: Node }
+    deriving (Show, Data, Typeable)
+
+data Arguments
+    = Create_Dot
+      { argFilename :: String
+      , argAtoms :: [String]
+      , node_id :: Node }
+    | Name_From_Id
+      { argFilename :: String
+      , argAtoms :: [String]
+      , node_id :: Node }
+    | Id_From_Name
+      { argFilename :: String
+      , argAtoms :: [String]
+      , node_name :: String }
+    | Combined_Amount
+      { argFilename :: String
+      , argAtoms :: [String]
+      , node_id :: Node }
+    deriving (Show, Data, Typeable)
+
+type Env  = ReaderT Environment IO
 type Prog = ReaderT Command Env
     
-main :: Prog ()
-main = do
+runProg :: Prog ()
+runProg = do
   filename <- lift $ asks inputFile
   atms <- lift $ asks atoms
-  (Right (Recipes rs)) <- liftIO $ (eitherDecode <$> (getJSON filename))
+  (Right (Recipes rs)) <- liftIO (eitherDecode <$> (getJSON filename)) :: Prog (Either String Recipes)
   cmd <- ask
   result <- (case cmd of
             (CreateDot nd) -> do
@@ -314,6 +337,56 @@ main = do
               let ig  = itemRecipesToGraph rs
                   gn  = (\nme -> filter ((== nme) . snd) $ labNodes ig)
               liftIO . putStrLn . show . fmap fst . listToMaybe . gn $ nn
+            (CombinedAmount nd) -> do
+              let ig  = itemRecipesToGraph rs
+                  m = soleMap $ delEdgesOf atms $ subgraph (xdfsWith (withouthAtoms atms) (\(_, x, _, _) -> x) [nd] ig) ig
+              liftIO . putStrLn . show . map (\(x, y) -> (fromJust $ lab ig y, x)) . simplify $ combAmnt m (m!nd)
            )
   return result
       
+atomItems :: [String]
+atomItems = ["iron-plate","copper-plate","steel-plate", "uranium-238", "uranium-235"]
+nodeIdHelp :: String
+nodeIdHelp = "Integer id of the item"
+cmdCreateDot, cmdNameFromId, cmdCombinedAmount, cmdIdFromName :: Arguments
+cmdCreateDot 
+    = Create_Dot 
+      { argFilename = "/tmp/export.json" &= help "Factorio recieps (default: /tmp/export.json)" &= typFile
+      , argAtoms = atomItems &= help ("Atomar items (default:" ++ foldl (\rs nx -> rs ++ "\n- " ++ nx) "" atomItems ++ ")")
+      , node_id = def &= help nodeIdHelp &= typ "INT"
+      } &= help "Write the graph into a .dot file"
+cmdNameFromId 
+    = Name_From_Id 
+      { argFilename = "/tmp/export.json" &= help "Factorio recieps (default: /tmp/export.json)" &= typFile
+      , argAtoms = atomItems &= help ("Atomar items (default:" ++ foldl (\rs nx -> rs ++ "\n- " ++ nx) "" atomItems ++ ")")
+      , node_id = def &= help nodeIdHelp &= typ "INT"
+      } &= help "Return the name of the item with given id "
+cmdCombinedAmount 
+    = Combined_Amount 
+      { argFilename = "/tmp/export.json" &= help "Factorio recieps (default: /tmp/export.json)" &= typFile
+      , argAtoms = atomItems &= help ("Atomar items (default:" ++ foldl (\rs nx -> rs ++ "\n- " ++ nx) "" atomItems ++ ")")
+      , node_id = def &= help nodeIdHelp &= typ "INT"
+      } &= help "Calculate the combined amount of atomar r~esources of the item"
+cmdIdFromName 
+    = Id_From_Name 
+      { argFilename = "/tmp/export.json" &= help "Factorio recieps (default: /tmp/export.json)" &= typFile
+      , argAtoms = atomItems &= help ("Atomar items (default:" ++ foldl (\rs nx -> rs ++ "\n- " ++ nx) "" atomItems ++ ")")
+      , node_name = def &= help "The item name" &= typ "STRING"
+      } &= help "Return the id of the item with given name"
+
+-- Environment "/tmp/export.json" ["iron-plate","copper-plate","steel-plate", "uranium-238", "uranium-235"]
+main :: IO ()
+main
+    = do argus <- cmdArgs (modes [cmdCreateDot, cmdNameFromId, cmdCombinedAmount, cmdIdFromName]
+                          &= help "Return various information of factorio recieps"
+                          &= program "hacktorio"
+                          &= summary "haskell client that gives info from reciepes list\nv 0.1 - by frosch03")
+         result <- (case argus of
+                     (Create_Dot fn at nd) -> runReaderT (runReaderT runProg $ CreateDot nd) $ Environment fn at
+                     (Name_From_Id fn at nd) -> runReaderT (runReaderT runProg $ NameFromId nd) $ Environment fn at
+                     (Combined_Amount fn at nd) -> runReaderT (runReaderT runProg $ CombinedAmount nd) $ Environment fn at
+                     (Id_From_Name fn at nd) -> runReaderT (runReaderT runProg $ IdFromName nd) $ Environment fn at
+                  )
+         return result
+
+       
