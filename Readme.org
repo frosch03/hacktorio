@@ -1,0 +1,50 @@
+#+Title: ReadMe
+
+* Command line
+
+Currently there are four functions wired out onto a command line. 
+
+1. Create dot
+2. Get the name of an id
+3. Get the id of an name
+4. Calculate the combined amount of items
+
+It's help looks like this
+#+BEGIN_SRC bash
+  haskell client that gives info from reciepes list
+  v 0.1 - by frosch03
+
+  hacktorio [COMMAND] ... [OPTIONS]
+    Return various information of factorio recieps
+
+  Common flags:
+       --argfilename=FILE  Factorio recieps (default: /tmp/export.json)
+       --argatoms=ITEM     Atomar items (default:
+                           - iron-plate
+                           - copper-plate
+                           - steel-plate
+                           - uranium-238
+                           - uranium-235)
+    -? --help              Display help message
+    -V --version           Print version information
+
+  hacktorio create-dot [OPTIONS]
+    Write the graph into a .dot file
+
+    -n --node-id=INT       Integer id of the item
+
+  hacktorio name-from-id [OPTIONS]
+    Return the name of the item with given id
+
+    -n --node-id=INT       Integer id of the item
+
+  hacktorio combined-amount [OPTIONS]
+    Calculate the combined amount of atomar r~esources of the item
+
+    -n --node-id=INT       Integer id of the item
+
+  hacktorio id-from-name [OPTIONS]
+    Return the id of the item with given name
+
+    -n --node-name=STRING  The item name
+#+END_SRC
