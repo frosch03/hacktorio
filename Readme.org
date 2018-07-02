@@ -59,13 +59,8 @@ number.
 hacktorio create-dot -n 4
 #+END_SRC
 
-<<<<<<< HEAD
 This produces =/tmp/assembling-machine-1.dot=, unfortunately currently
 it's hardwired to =/tmp= and the item's name. You can create a .png
-=======
-This produces `/tmp/assembling-machine-1.dot`, unfortunately currently
-it's hardwired to `/tmp` and the item's name. You can create a .png
->>>>>>> af01ef48aeb1812ed7452409816a965eecb1ec91
 image if you have the graphviz tools installed via:
 
 #+BEGIN_SRC bash
@@ -80,11 +75,7 @@ To get the name of an item from its id, use this function:
 hacktorio name-from-id -n 4
 #+END_SRC
 
-<<<<<<< HEAD
 Which should return =assembling-machine-1=.
-=======
-Which should return `assembling-machine-1`.
->>>>>>> af01ef48aeb1812ed7452409816a965eecb1ec91
 
 ** Id from name
 
@@ -95,31 +86,19 @@ function:
 hacktorio id-from-name -n assembling-machine-1
 #+END_SRC
 
-<<<<<<< HEAD
 This should return =4=. Note, that you have to type the exact name. 
-=======
-This should return `4`. Note, that you have to type the exact name. 
->>>>>>> af01ef48aeb1812ed7452409816a965eecb1ec91
 
 ** Combined Amount
 
 The combined amount of an item returns the amount of each atomic item,
 that is needed in order to produce one of the given item. E.g. for one
-<<<<<<< HEAD
 =iron-gear-wheel= you need two =iron-plate=. So,
-=======
-`iron-gear-wheel` you need two `iron-plate`. So,
->>>>>>> af01ef48aeb1812ed7452409816a965eecb1ec91
 
 #+BEGIN_SRC bash
 hacktorio combined-amount -n 69
 #+END_SRC
 
-<<<<<<< HEAD
 should return 11.5, as it is build in total of 11.5 =iron-plate=. 
-=======
-should return 11.5, as it is build in total of 11.5 `iron-plate`. 
->>>>>>> af01ef48aeb1812ed7452409816a965eecb1ec91
 
 ** Example usage
 
