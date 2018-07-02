@@ -1,0 +1,4449 @@
+{
+	"recipes": [
+	{
+		"name": "assembling-machine-1",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 9,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 3,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "assembling-machine-1",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "firearm-magazine",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 4,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "firearm-magazine",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 1
+	},
+	{
+		"name": "pistol",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "copper-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "pistol",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 5
+	},
+	{
+		"name": "piercing-rounds-magazine",
+		"ingredients":
+		[
+			{ "ingredient_name": "copper-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "firearm-magazine",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "piercing-rounds-magazine",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 3
+	},
+	{
+		"name": "submachine-gun",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "copper-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "submachine-gun",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 10
+	},
+	{
+		"name": "uranium-rounds-magazine",
+		"ingredients":
+		[
+			{ "ingredient_name": "uranium-238",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "piercing-rounds-magazine",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "uranium-rounds-magazine",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 10
+	},
+	{
+		"name": "beacon",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "copper-cable",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 20,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 20,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "beacon",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 15
+	},
+	{
+		"name": "burner-inserter",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "burner-inserter",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "copper-cable",
+		"ingredients":
+		[
+			{ "ingredient_name": "copper-plate",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "copper-cable",
+			  "product_amount": 2,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "solar-panel-equipment",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "solar-panel",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "solar-panel-equipment",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 10
+	},
+	{
+		"name": "fusion-reactor-equipment",
+		"ingredients":
+		[
+			{ "ingredient_name": "processing-unit",
+			  "ingredient_amount": 250,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "fusion-reactor-equipment",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 10
+	},
+	{
+		"name": "small-electric-pole",
+		"ingredients":
+		[
+			{ "ingredient_name": "wood",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "copper-cable",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "small-electric-pole",
+			  "product_amount": 2,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "medium-electric-pole",
+		"ingredients":
+		[
+			{ "ingredient_name": "copper-plate",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "medium-electric-pole",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "big-electric-pole",
+		"ingredients":
+		[
+			{ "ingredient_name": "copper-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "big-electric-pole",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "substation",
+		"ingredients":
+		[
+			{ "ingredient_name": "copper-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "substation",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "sulfuric-acid",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "sulfur",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "water",
+			  "ingredient_amount": 100,
+			  "ingredient_type": "fluid"}
+		],
+		"products":
+		[
+			{ "product_name": "sulfuric-acid",
+			  "product_amount": 50,
+			  "product_type": "fluid"}
+		],
+		"energy": 1
+	},
+	{
+		"name": "grenade",
+		"ingredients":
+		[
+			{ "ingredient_name": "coal",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "grenade",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 8
+	},
+	{
+		"name": "cluster-grenade",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "explosives",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "grenade",
+			  "ingredient_amount": 7,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "cluster-grenade",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 8
+	},
+	{
+		"name": "burner-mining-drill",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 3,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 3,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "stone-furnace",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "burner-mining-drill",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 2
+	},
+	{
+		"name": "wooden-chest",
+		"ingredients":
+		[
+			{ "ingredient_name": "wood",
+			  "ingredient_amount": 4,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "wooden-chest",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "electric-mining-drill",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 3,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "electric-mining-drill",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 2
+	},
+	{
+		"name": "iron-chest",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 8,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "iron-chest",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "steel-chest",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 8,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "steel-chest",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "light-armor",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 40,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "light-armor",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 3
+	},
+	{
+		"name": "small-lamp",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-stick",
+			  "ingredient_amount": 3,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "small-lamp",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "iron-axe",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 3,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-stick",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "iron-axe",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "steel-axe",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-stick",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "steel-axe",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "basic-oil-processing",
+		"ingredients":
+		[
+			{ "ingredient_name": "crude-oil",
+			  "ingredient_amount": 100,
+			  "ingredient_type": "fluid"}
+		],
+		"products":
+		[
+			{ "product_name": "heavy-oil",
+			  "product_amount": 30,
+			  "product_type": "fluid"},
+			{ "product_name": "light-oil",
+			  "product_amount": 30,
+			  "product_type": "fluid"},
+			{ "product_name": "petroleum-gas",
+			  "product_amount": 40,
+			  "product_type": "fluid"}
+		],
+		"energy": 5
+	},
+	{
+		"name": "advanced-oil-processing",
+		"ingredients":
+		[
+			{ "ingredient_name": "water",
+			  "ingredient_amount": 50,
+			  "ingredient_type": "fluid"},
+			{ "ingredient_name": "crude-oil",
+			  "ingredient_amount": 100,
+			  "ingredient_type": "fluid"}
+		],
+		"products":
+		[
+			{ "product_name": "heavy-oil",
+			  "product_amount": 10,
+			  "product_type": "fluid"},
+			{ "product_name": "light-oil",
+			  "product_amount": 45,
+			  "product_type": "fluid"},
+			{ "product_name": "petroleum-gas",
+			  "product_amount": 55,
+			  "product_type": "fluid"}
+		],
+		"energy": 5
+	},
+	{
+		"name": "coal-liquefaction",
+		"ingredients":
+		[
+			{ "ingredient_name": "coal",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "heavy-oil",
+			  "ingredient_amount": 25,
+			  "ingredient_type": "fluid"},
+			{ "ingredient_name": "steam",
+			  "ingredient_amount": 50,
+			  "ingredient_type": "fluid"}
+		],
+		"products":
+		[
+			{ "product_name": "heavy-oil",
+			  "product_amount": 35,
+			  "product_type": "fluid"},
+			{ "product_name": "light-oil",
+			  "product_amount": 15,
+			  "product_type": "fluid"},
+			{ "product_name": "petroleum-gas",
+			  "product_amount": 20,
+			  "product_type": "fluid"}
+		],
+		"energy": 5
+	},
+	{
+		"name": "pipe",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "pipe",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "pipe-to-ground",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "pipe",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "pipe-to-ground",
+			  "product_amount": 2,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "logistic-robot",
+		"ingredients":
+		[
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "flying-robot-frame",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "logistic-robot",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "construction-robot",
+		"ingredients":
+		[
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "flying-robot-frame",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "construction-robot",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "science-pack-1",
+		"ingredients":
+		[
+			{ "ingredient_name": "copper-plate",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "science-pack-1",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 5
+	},
+	{
+		"name": "speed-module",
+		"ingredients":
+		[
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "speed-module",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 15
+	},
+	{
+		"name": "speed-module-2",
+		"ingredients":
+		[
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "processing-unit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "speed-module",
+			  "ingredient_amount": 4,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "speed-module-2",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 30
+	},
+	{
+		"name": "speed-module-3",
+		"ingredients":
+		[
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "processing-unit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "speed-module-2",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "speed-module-3",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 60
+	},
+	{
+		"name": "stone-brick",
+		"ingredients":
+		[
+			{ "ingredient_name": "stone",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "stone-brick",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 3.5
+	},
+	{
+		"name": "stone-furnace",
+		"ingredients":
+		[
+			{ "ingredient_name": "stone",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "stone-furnace",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "stone-wall",
+		"ingredients":
+		[
+			{ "ingredient_name": "stone-brick",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "stone-wall",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "rail",
+		"ingredients":
+		[
+			{ "ingredient_name": "stone",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-stick",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "rail",
+			  "product_amount": 2,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "train-stop",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 3,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "train-stop",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "rail-signal",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "rail-signal",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "rail-chain-signal",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "rail-chain-signal",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "locomotive",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 30,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "engine-unit",
+			  "ingredient_amount": 20,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "locomotive",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 4
+	},
+	{
+		"name": "cargo-wagon",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 20,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 20,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "cargo-wagon",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 1
+	},
+	{
+		"name": "fluid-wagon",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 16,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "storage-tank",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "pipe",
+			  "ingredient_amount": 8,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "fluid-wagon",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 1.5
+	},
+	{
+		"name": "artillery-wagon",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 40,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 20,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "engine-unit",
+			  "ingredient_amount": 64,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "pipe",
+			  "ingredient_amount": 16,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "artillery-wagon",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 4
+	},
+	{
+		"name": "transport-belt",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "transport-belt",
+			  "product_amount": 2,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "fast-transport-belt",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "transport-belt",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "fast-transport-belt",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "express-transport-belt",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "fast-transport-belt",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "lubricant",
+			  "ingredient_amount": 20,
+			  "ingredient_type": "fluid"}
+		],
+		"products":
+		[
+			{ "product_name": "express-transport-belt",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "gate",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "stone-wall",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "gate",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "wood",
+		"ingredients":
+		[
+			{ "ingredient_name": "raw-wood",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "wood",
+			  "product_amount": 2,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "assembling-machine-2",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 9,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 3,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "assembling-machine-1",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "assembling-machine-2",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "concrete",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-ore",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "stone-brick",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "water",
+			  "ingredient_amount": 100,
+			  "ingredient_type": "fluid"}
+		],
+		"products":
+		[
+			{ "product_name": "concrete",
+			  "product_amount": 10,
+			  "product_type": "item"}
+		],
+		"energy": 10
+	},
+	{
+		"name": "hazard-concrete",
+		"ingredients":
+		[
+			{ "ingredient_name": "concrete",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "hazard-concrete",
+			  "product_amount": 10,
+			  "product_type": "item"}
+		],
+		"energy": 0.25
+	},
+	{
+		"name": "refined-concrete",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-stick",
+			  "ingredient_amount": 8,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "concrete",
+			  "ingredient_amount": 20,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "water",
+			  "ingredient_amount": 100,
+			  "ingredient_type": "fluid"}
+		],
+		"products":
+		[
+			{ "product_name": "refined-concrete",
+			  "product_amount": 10,
+			  "product_type": "item"}
+		],
+		"energy": 15
+	},
+	{
+		"name": "refined-hazard-concrete",
+		"ingredients":
+		[
+			{ "ingredient_name": "refined-concrete",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "refined-hazard-concrete",
+			  "product_amount": 10,
+			  "product_type": "item"}
+		],
+		"energy": 0.25
+	},
+	{
+		"name": "fill-crude-oil-barrel",
+		"ingredients":
+		[
+			{ "ingredient_name": "empty-barrel",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "crude-oil",
+			  "ingredient_amount": 50,
+			  "ingredient_type": "fluid"}
+		],
+		"products":
+		[
+			{ "product_name": "crude-oil-barrel",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.2
+	},
+	{
+		"name": "fill-heavy-oil-barrel",
+		"ingredients":
+		[
+			{ "ingredient_name": "empty-barrel",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "heavy-oil",
+			  "ingredient_amount": 50,
+			  "ingredient_type": "fluid"}
+		],
+		"products":
+		[
+			{ "product_name": "heavy-oil-barrel",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.2
+	},
+	{
+		"name": "fill-light-oil-barrel",
+		"ingredients":
+		[
+			{ "ingredient_name": "empty-barrel",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "light-oil",
+			  "ingredient_amount": 50,
+			  "ingredient_type": "fluid"}
+		],
+		"products":
+		[
+			{ "product_name": "light-oil-barrel",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.2
+	},
+	{
+		"name": "fill-lubricant-barrel",
+		"ingredients":
+		[
+			{ "ingredient_name": "empty-barrel",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "lubricant",
+			  "ingredient_amount": 50,
+			  "ingredient_type": "fluid"}
+		],
+		"products":
+		[
+			{ "product_name": "lubricant-barrel",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.2
+	},
+	{
+		"name": "fill-petroleum-gas-barrel",
+		"ingredients":
+		[
+			{ "ingredient_name": "empty-barrel",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "petroleum-gas",
+			  "ingredient_amount": 50,
+			  "ingredient_type": "fluid"}
+		],
+		"products":
+		[
+			{ "product_name": "petroleum-gas-barrel",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.2
+	},
+	{
+		"name": "fill-sulfuric-acid-barrel",
+		"ingredients":
+		[
+			{ "ingredient_name": "empty-barrel",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "sulfuric-acid",
+			  "ingredient_amount": 50,
+			  "ingredient_type": "fluid"}
+		],
+		"products":
+		[
+			{ "product_name": "sulfuric-acid-barrel",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.2
+	},
+	{
+		"name": "fill-water-barrel",
+		"ingredients":
+		[
+			{ "ingredient_name": "empty-barrel",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "water",
+			  "ingredient_amount": 50,
+			  "ingredient_type": "fluid"}
+		],
+		"products":
+		[
+			{ "product_name": "water-barrel",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.2
+	},
+	{
+		"name": "heavy-oil-cracking",
+		"ingredients":
+		[
+			{ "ingredient_name": "water",
+			  "ingredient_amount": 30,
+			  "ingredient_type": "fluid"},
+			{ "ingredient_name": "heavy-oil",
+			  "ingredient_amount": 40,
+			  "ingredient_type": "fluid"}
+		],
+		"products":
+		[
+			{ "product_name": "light-oil",
+			  "product_amount": 30,
+			  "product_type": "fluid"}
+		],
+		"energy": 3
+	},
+	{
+		"name": "light-oil-cracking",
+		"ingredients":
+		[
+			{ "ingredient_name": "water",
+			  "ingredient_amount": 30,
+			  "ingredient_type": "fluid"},
+			{ "ingredient_name": "light-oil",
+			  "ingredient_amount": 30,
+			  "ingredient_type": "fluid"}
+		],
+		"products":
+		[
+			{ "product_name": "petroleum-gas",
+			  "product_amount": 20,
+			  "product_type": "fluid"}
+		],
+		"energy": 3
+	},
+	{
+		"name": "solid-fuel-from-light-oil",
+		"ingredients":
+		[
+			{ "ingredient_name": "light-oil",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "fluid"}
+		],
+		"products":
+		[
+			{ "product_name": "solid-fuel",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 3
+	},
+	{
+		"name": "solid-fuel-from-petroleum-gas",
+		"ingredients":
+		[
+			{ "ingredient_name": "petroleum-gas",
+			  "ingredient_amount": 20,
+			  "ingredient_type": "fluid"}
+		],
+		"products":
+		[
+			{ "product_name": "solid-fuel",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 3
+	},
+	{
+		"name": "solid-fuel-from-heavy-oil",
+		"ingredients":
+		[
+			{ "ingredient_name": "heavy-oil",
+			  "ingredient_amount": 20,
+			  "ingredient_type": "fluid"}
+		],
+		"products":
+		[
+			{ "product_name": "solid-fuel",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 3
+	},
+	{
+		"name": "storage-tank",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 20,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "storage-tank",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 3
+	},
+	{
+		"name": "offshore-pump",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "pipe",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "offshore-pump",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "pumpjack",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "pipe",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "pumpjack",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 5
+	},
+	{
+		"name": "heavy-armor",
+		"ingredients":
+		[
+			{ "ingredient_name": "copper-plate",
+			  "ingredient_amount": 100,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 50,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "heavy-armor",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 8
+	},
+	{
+		"name": "inserter",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "inserter",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "iron-plate",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-ore",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "iron-plate",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 3.5
+	},
+	{
+		"name": "iron-stick",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "iron-stick",
+			  "product_amount": 2,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "car",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 20,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "engine-unit",
+			  "ingredient_amount": 8,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "car",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 2
+	},
+	{
+		"name": "tank",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 50,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 15,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "engine-unit",
+			  "ingredient_amount": 32,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "tank",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 5
+	},
+	{
+		"name": "small-plane",
+		"ingredients":
+		[
+			{ "ingredient_name": "plastic-bar",
+			  "ingredient_amount": 100,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "battery",
+			  "ingredient_amount": 100,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 200,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electric-engine-unit",
+			  "ingredient_amount": 20,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "small-plane",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 30
+	},
+	{
+		"name": "pump",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "engine-unit",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "pipe",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "pump",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 2
+	},
+	{
+		"name": "poison-capsule",
+		"ingredients":
+		[
+			{ "ingredient_name": "coal",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 3,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 3,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "poison-capsule",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 8
+	},
+	{
+		"name": "repair-pack",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "repair-pack",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "science-pack-2",
+		"ingredients":
+		[
+			{ "ingredient_name": "transport-belt",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "inserter",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "science-pack-2",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 6
+	},
+	{
+		"name": "energy-shield-equipment",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "energy-shield-equipment",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 10
+	},
+	{
+		"name": "energy-shield-mk2-equipment",
+		"ingredients":
+		[
+			{ "ingredient_name": "processing-unit",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "energy-shield-equipment",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "energy-shield-mk2-equipment",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 10
+	},
+	{
+		"name": "shotgun",
+		"ingredients":
+		[
+			{ "ingredient_name": "wood",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 15,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "copper-plate",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "shotgun",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 10
+	},
+	{
+		"name": "shotgun-shell",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "copper-plate",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "shotgun-shell",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 3
+	},
+	{
+		"name": "combat-shotgun",
+		"ingredients":
+		[
+			{ "ingredient_name": "wood",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "copper-plate",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 15,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "combat-shotgun",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 10
+	},
+	{
+		"name": "piercing-shotgun-shell",
+		"ingredients":
+		[
+			{ "ingredient_name": "copper-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "shotgun-shell",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "piercing-shotgun-shell",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 8
+	},
+	{
+		"name": "boiler",
+		"ingredients":
+		[
+			{ "ingredient_name": "pipe",
+			  "ingredient_amount": 4,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "stone-furnace",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "boiler",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "steam-engine",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 8,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "pipe",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "steam-engine",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "steam-turbine",
+		"ingredients":
+		[
+			{ "ingredient_name": "copper-plate",
+			  "ingredient_amount": 50,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 50,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "pipe",
+			  "ingredient_amount": 20,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "steam-turbine",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 3
+	},
+	{
+		"name": "steel-furnace",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 6,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "stone-brick",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "steel-furnace",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 3
+	},
+	{
+		"name": "logistic-chest-active-provider",
+		"ingredients":
+		[
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 3,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "steel-chest",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "logistic-chest-active-provider",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "logistic-chest-passive-provider",
+		"ingredients":
+		[
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 3,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "steel-chest",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "logistic-chest-passive-provider",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "logistic-chest-storage",
+		"ingredients":
+		[
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 3,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "steel-chest",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "logistic-chest-storage",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "logistic-chest-buffer",
+		"ingredients":
+		[
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 3,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "steel-chest",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "logistic-chest-buffer",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "logistic-chest-requester",
+		"ingredients":
+		[
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 3,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "steel-chest",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "logistic-chest-requester",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "gun-turret",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 20,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "copper-plate",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "gun-turret",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 8
+	},
+	{
+		"name": "laser-turret",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 20,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "battery",
+			  "ingredient_amount": 12,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 20,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "laser-turret",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 20
+	},
+	{
+		"name": "flamethrower-turret",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 30,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 15,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "engine-unit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "pipe",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "flamethrower-turret",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 20
+	},
+	{
+		"name": "artillery-turret",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 60,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 40,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 20,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "concrete",
+			  "ingredient_amount": 60,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "artillery-turret",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 40
+	},
+	{
+		"name": "underground-belt",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "transport-belt",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "underground-belt",
+			  "product_amount": 2,
+			  "product_type": "item"}
+		],
+		"energy": 1
+	},
+	{
+		"name": "fast-underground-belt",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 40,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "underground-belt",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "fast-underground-belt",
+			  "product_amount": 2,
+			  "product_type": "item"}
+		],
+		"energy": 2
+	},
+	{
+		"name": "express-underground-belt",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 80,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "fast-underground-belt",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "lubricant",
+			  "ingredient_amount": 40,
+			  "ingredient_type": "fluid"}
+		],
+		"products":
+		[
+			{ "product_name": "express-underground-belt",
+			  "product_amount": 2,
+			  "product_type": "item"}
+		],
+		"energy": 2
+	},
+	{
+		"name": "red-wire",
+		"ingredients":
+		[
+			{ "ingredient_name": "copper-cable",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "red-wire",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "green-wire",
+		"ingredients":
+		[
+			{ "ingredient_name": "copper-cable",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "green-wire",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "assembling-machine-3",
+		"ingredients":
+		[
+			{ "ingredient_name": "assembling-machine-2",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "speed-module",
+			  "ingredient_amount": 4,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "assembling-machine-3",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "battery-equipment",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "battery",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "battery-equipment",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 10
+	},
+	{
+		"name": "battery-mk2-equipment",
+		"ingredients":
+		[
+			{ "ingredient_name": "processing-unit",
+			  "ingredient_amount": 20,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "battery-equipment",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "battery-mk2-equipment",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 10
+	},
+	{
+		"name": "arithmetic-combinator",
+		"ingredients":
+		[
+			{ "ingredient_name": "copper-cable",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "arithmetic-combinator",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "decider-combinator",
+		"ingredients":
+		[
+			{ "ingredient_name": "copper-cable",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "decider-combinator",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "constant-combinator",
+		"ingredients":
+		[
+			{ "ingredient_name": "copper-cable",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "constant-combinator",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "copper-plate",
+		"ingredients":
+		[
+			{ "ingredient_name": "copper-ore",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "copper-plate",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 3.5
+	},
+	{
+		"name": "effectivity-module",
+		"ingredients":
+		[
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "effectivity-module",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 15
+	},
+	{
+		"name": "effectivity-module-2",
+		"ingredients":
+		[
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "processing-unit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "effectivity-module",
+			  "ingredient_amount": 4,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "effectivity-module-2",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 30
+	},
+	{
+		"name": "effectivity-module-3",
+		"ingredients":
+		[
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "processing-unit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "effectivity-module-2",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "effectivity-module-3",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 60
+	},
+	{
+		"name": "electric-furnace",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "stone-brick",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "electric-furnace",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 5
+	},
+	{
+		"name": "empty-crude-oil-barrel",
+		"ingredients":
+		[
+			{ "ingredient_name": "crude-oil-barrel",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "empty-barrel",
+			  "product_amount": 1,
+			  "product_type": "item"},
+			{ "product_name": "crude-oil",
+			  "product_amount": 50,
+			  "product_type": "fluid"}
+		],
+		"energy": 0.2
+	},
+	{
+		"name": "empty-heavy-oil-barrel",
+		"ingredients":
+		[
+			{ "ingredient_name": "heavy-oil-barrel",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "empty-barrel",
+			  "product_amount": 1,
+			  "product_type": "item"},
+			{ "product_name": "heavy-oil",
+			  "product_amount": 50,
+			  "product_type": "fluid"}
+		],
+		"energy": 0.2
+	},
+	{
+		"name": "empty-light-oil-barrel",
+		"ingredients":
+		[
+			{ "ingredient_name": "light-oil-barrel",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "empty-barrel",
+			  "product_amount": 1,
+			  "product_type": "item"},
+			{ "product_name": "light-oil",
+			  "product_amount": 50,
+			  "product_type": "fluid"}
+		],
+		"energy": 0.2
+	},
+	{
+		"name": "empty-lubricant-barrel",
+		"ingredients":
+		[
+			{ "ingredient_name": "lubricant-barrel",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "empty-barrel",
+			  "product_amount": 1,
+			  "product_type": "item"},
+			{ "product_name": "lubricant",
+			  "product_amount": 50,
+			  "product_type": "fluid"}
+		],
+		"energy": 0.2
+	},
+	{
+		"name": "empty-petroleum-gas-barrel",
+		"ingredients":
+		[
+			{ "ingredient_name": "petroleum-gas-barrel",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "empty-barrel",
+			  "product_amount": 1,
+			  "product_type": "item"},
+			{ "product_name": "petroleum-gas",
+			  "product_amount": 50,
+			  "product_type": "fluid"}
+		],
+		"energy": 0.2
+	},
+	{
+		"name": "empty-sulfuric-acid-barrel",
+		"ingredients":
+		[
+			{ "ingredient_name": "sulfuric-acid-barrel",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "empty-barrel",
+			  "product_amount": 1,
+			  "product_type": "item"},
+			{ "product_name": "sulfuric-acid",
+			  "product_amount": 50,
+			  "product_type": "fluid"}
+		],
+		"energy": 0.2
+	},
+	{
+		"name": "empty-water-barrel",
+		"ingredients":
+		[
+			{ "ingredient_name": "water-barrel",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "empty-barrel",
+			  "product_amount": 1,
+			  "product_type": "item"},
+			{ "product_name": "water",
+			  "product_amount": 50,
+			  "product_type": "fluid"}
+		],
+		"energy": 0.2
+	},
+	{
+		"name": "iron-gear-wheel",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "iron-gear-wheel",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "landfill",
+		"ingredients":
+		[
+			{ "ingredient_name": "stone",
+			  "ingredient_amount": 20,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "landfill",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "long-handed-inserter",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "inserter",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "long-handed-inserter",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "modular-armor",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 50,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 30,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "modular-armor",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 15
+	},
+	{
+		"name": "productivity-module",
+		"ingredients":
+		[
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "productivity-module",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 15
+	},
+	{
+		"name": "productivity-module-2",
+		"ingredients":
+		[
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "processing-unit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "productivity-module",
+			  "ingredient_amount": 4,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "productivity-module-2",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 30
+	},
+	{
+		"name": "productivity-module-3",
+		"ingredients":
+		[
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "processing-unit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "productivity-module-2",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "productivity-module-3",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 60
+	},
+	{
+		"name": "railgun",
+		"ingredients":
+		[
+			{ "ingredient_name": "copper-plate",
+			  "ingredient_amount": 15,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 15,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "railgun",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 8
+	},
+	{
+		"name": "railgun-dart",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "railgun-dart",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 8
+	},
+	{
+		"name": "science-pack-3",
+		"ingredients":
+		[
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "engine-unit",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electric-mining-drill",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "science-pack-3",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 12
+	},
+	{
+		"name": "roboport",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 45,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 45,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 45,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "roboport",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 5
+	},
+	{
+		"name": "slowdown-capsule",
+		"ingredients":
+		[
+			{ "ingredient_name": "coal",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "slowdown-capsule",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 8
+	},
+	{
+		"name": "splitter",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "transport-belt",
+			  "ingredient_amount": 4,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "splitter",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 1
+	},
+	{
+		"name": "fast-splitter",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "splitter",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "fast-splitter",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 2
+	},
+	{
+		"name": "express-splitter",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "fast-splitter",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "lubricant",
+			  "ingredient_amount": 80,
+			  "ingredient_type": "fluid"}
+		],
+		"products":
+		[
+			{ "product_name": "express-splitter",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 2
+	},
+	{
+		"name": "personal-laser-defense-equipment",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "processing-unit",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "laser-turret",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "personal-laser-defense-equipment",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 10
+	},
+	{
+		"name": "discharge-defense-equipment",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 20,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "processing-unit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "laser-turret",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "discharge-defense-equipment",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 10
+	},
+	{
+		"name": "cannon-shell",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "plastic-bar",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "explosives",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "cannon-shell",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 8
+	},
+	{
+		"name": "explosive-cannon-shell",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "plastic-bar",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "explosives",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "explosive-cannon-shell",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 8
+	},
+	{
+		"name": "uranium-cannon-shell",
+		"ingredients":
+		[
+			{ "ingredient_name": "uranium-238",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "cannon-shell",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "uranium-cannon-shell",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 12
+	},
+	{
+		"name": "cliff-explosives",
+		"ingredients":
+		[
+			{ "ingredient_name": "explosives",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "empty-barrel",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "grenade",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "cliff-explosives",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 8
+	},
+	{
+		"name": "defender-capsule",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 3,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "piercing-rounds-magazine",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "defender-capsule",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 8
+	},
+	{
+		"name": "empty-barrel",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "empty-barrel",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 1
+	},
+	{
+		"name": "explosive-uranium-cannon-shell",
+		"ingredients":
+		[
+			{ "ingredient_name": "uranium-238",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "explosive-cannon-shell",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "explosive-uranium-cannon-shell",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 12
+	},
+	{
+		"name": "artillery-shell",
+		"ingredients":
+		[
+			{ "ingredient_name": "explosives",
+			  "ingredient_amount": 8,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "explosive-cannon-shell",
+			  "ingredient_amount": 4,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "radar",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "artillery-shell",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 15
+	},
+	{
+		"name": "fast-inserter",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "inserter",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "fast-inserter",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "loader",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "transport-belt",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "inserter",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "loader",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 1
+	},
+	{
+		"name": "fast-loader",
+		"ingredients":
+		[
+			{ "ingredient_name": "fast-transport-belt",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "loader",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "fast-loader",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 3
+	},
+	{
+		"name": "express-loader",
+		"ingredients":
+		[
+			{ "ingredient_name": "express-transport-belt",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "fast-loader",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "express-loader",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 10
+	},
+	{
+		"name": "military-science-pack",
+		"ingredients":
+		[
+			{ "ingredient_name": "piercing-rounds-magazine",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "grenade",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "gun-turret",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "military-science-pack",
+			  "product_amount": 2,
+			  "product_type": "item"}
+		],
+		"energy": 10
+	},
+	{
+		"name": "power-switch",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "copper-cable",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "power-switch",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 2
+	},
+	{
+		"name": "programmable-speaker",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "copper-cable",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 4,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "programmable-speaker",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 2
+	},
+	{
+		"name": "power-armor",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 40,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "processing-unit",
+			  "ingredient_amount": 40,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electric-engine-unit",
+			  "ingredient_amount": 20,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "power-armor",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 20
+	},
+	{
+		"name": "radar",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "radar",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "oil-refinery",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 15,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "pipe",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "stone-brick",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "oil-refinery",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 8
+	},
+	{
+		"name": "rocket-launcher",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "rocket-launcher",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 10
+	},
+	{
+		"name": "rocket",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "explosives",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "rocket",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 8
+	},
+	{
+		"name": "explosive-rocket",
+		"ingredients":
+		[
+			{ "ingredient_name": "explosives",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "rocket",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "explosive-rocket",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 8
+	},
+	{
+		"name": "atomic-bomb",
+		"ingredients":
+		[
+			{ "ingredient_name": "explosives",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "processing-unit",
+			  "ingredient_amount": 20,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "uranium-235",
+			  "ingredient_amount": 30,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "atomic-bomb",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 50
+	},
+	{
+		"name": "solar-panel",
+		"ingredients":
+		[
+			{ "ingredient_name": "copper-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 15,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "solar-panel",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 10
+	},
+	{
+		"name": "steel-plate",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "steel-plate",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 17.5
+	},
+	{
+		"name": "accumulator",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "battery",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "accumulator",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 10
+	},
+	{
+		"name": "chemical-plant",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "pipe",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "chemical-plant",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 5
+	},
+	{
+		"name": "distractor-capsule",
+		"ingredients":
+		[
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 3,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "defender-capsule",
+			  "ingredient_amount": 4,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "distractor-capsule",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 15
+	},
+	{
+		"name": "electric-energy-interface",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "electric-energy-interface",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "electronic-circuit",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "copper-cable",
+			  "ingredient_amount": 3,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "electronic-circuit",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "exoskeleton-equipment",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 20,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "processing-unit",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electric-engine-unit",
+			  "ingredient_amount": 30,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "exoskeleton-equipment",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 10
+	},
+	{
+		"name": "filter-inserter",
+		"ingredients":
+		[
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 4,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "fast-inserter",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "filter-inserter",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "flamethrower",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "flamethrower",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 10
+	},
+	{
+		"name": "flamethrower-ammo",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "light-oil",
+			  "ingredient_amount": 50,
+			  "ingredient_type": "fluid"},
+			{ "ingredient_name": "heavy-oil",
+			  "ingredient_amount": 50,
+			  "ingredient_type": "fluid"}
+		],
+		"products":
+		[
+			{ "product_name": "flamethrower-ammo",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 6
+	},
+	{
+		"name": "lubricant",
+		"ingredients":
+		[
+			{ "ingredient_name": "heavy-oil",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "fluid"}
+		],
+		"products":
+		[
+			{ "product_name": "lubricant",
+			  "product_amount": 10,
+			  "product_type": "fluid"}
+		],
+		"energy": 1
+	},
+	{
+		"name": "power-armor-mk2",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 40,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "processing-unit",
+			  "ingredient_amount": 40,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "speed-module-3",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "effectivity-module-3",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "power-armor-mk2",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 25
+	},
+	{
+		"name": "production-science-pack",
+		"ingredients":
+		[
+			{ "ingredient_name": "electric-engine-unit",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electric-furnace",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "production-science-pack",
+			  "product_amount": 2,
+			  "product_type": "item"}
+		],
+		"energy": 14
+	},
+	{
+		"name": "personal-roboport-equipment",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 20,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "battery",
+			  "ingredient_amount": 45,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 40,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "personal-roboport-equipment",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 10
+	},
+	{
+		"name": "personal-roboport-mk2-equipment",
+		"ingredients":
+		[
+			{ "ingredient_name": "processing-unit",
+			  "ingredient_amount": 100,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "personal-roboport-equipment",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "personal-roboport-mk2-equipment",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 20
+	},
+	{
+		"name": "rocket-silo",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 1000,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "processing-unit",
+			  "ingredient_amount": 200,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electric-engine-unit",
+			  "ingredient_amount": 200,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "pipe",
+			  "ingredient_amount": 100,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "concrete",
+			  "ingredient_amount": 1000,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "rocket-silo",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 30
+	},
+	{
+		"name": "advanced-circuit",
+		"ingredients":
+		[
+			{ "ingredient_name": "plastic-bar",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "copper-cable",
+			  "ingredient_amount": 4,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "advanced-circuit",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 6
+	},
+	{
+		"name": "destroyer-capsule",
+		"ingredients":
+		[
+			{ "ingredient_name": "speed-module",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "distractor-capsule",
+			  "ingredient_amount": 4,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "destroyer-capsule",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 15
+	},
+	{
+		"name": "high-tech-science-pack",
+		"ingredients":
+		[
+			{ "ingredient_name": "battery",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "copper-cable",
+			  "ingredient_amount": 30,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "processing-unit",
+			  "ingredient_amount": 3,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "speed-module",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "high-tech-science-pack",
+			  "product_amount": 2,
+			  "product_type": "item"}
+		],
+		"energy": 14
+	},
+	{
+		"name": "land-mine",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "explosives",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "land-mine",
+			  "product_amount": 4,
+			  "product_type": "item"}
+		],
+		"energy": 5
+	},
+	{
+		"name": "night-vision-equipment",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "night-vision-equipment",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 10
+	},
+	{
+		"name": "nuclear-reactor",
+		"ingredients":
+		[
+			{ "ingredient_name": "copper-plate",
+			  "ingredient_amount": 500,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 500,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 500,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "concrete",
+			  "ingredient_amount": 500,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "nuclear-reactor",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 8
+	},
+	{
+		"name": "heat-exchanger",
+		"ingredients":
+		[
+			{ "ingredient_name": "copper-plate",
+			  "ingredient_amount": 100,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "pipe",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "heat-exchanger",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 3
+	},
+	{
+		"name": "heat-pipe",
+		"ingredients":
+		[
+			{ "ingredient_name": "copper-plate",
+			  "ingredient_amount": 20,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "heat-pipe",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 1
+	},
+	{
+		"name": "plastic-bar",
+		"ingredients":
+		[
+			{ "ingredient_name": "coal",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "petroleum-gas",
+			  "ingredient_amount": 20,
+			  "ingredient_type": "fluid"}
+		],
+		"products":
+		[
+			{ "product_name": "plastic-bar",
+			  "product_amount": 2,
+			  "product_type": "item"}
+		],
+		"energy": 1
+	},
+	{
+		"name": "stack-inserter",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 15,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 15,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "fast-inserter",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "stack-inserter",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "centrifuge",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 50,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 100,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 100,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "concrete",
+			  "ingredient_amount": 100,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "centrifuge",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 4
+	},
+	{
+		"name": "lab",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "transport-belt",
+			  "ingredient_amount": 4,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "lab",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 2
+	},
+	{
+		"name": "processing-unit",
+		"ingredients":
+		[
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 20,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "advanced-circuit",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "sulfuric-acid",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "fluid"}
+		],
+		"products":
+		[
+			{ "product_name": "processing-unit",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 10
+	},
+	{
+		"name": "stack-filter-inserter",
+		"ingredients":
+		[
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "stack-inserter",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "stack-filter-inserter",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "sulfur",
+		"ingredients":
+		[
+			{ "ingredient_name": "water",
+			  "ingredient_amount": 30,
+			  "ingredient_type": "fluid"},
+			{ "ingredient_name": "petroleum-gas",
+			  "ingredient_amount": 30,
+			  "ingredient_type": "fluid"}
+		],
+		"products":
+		[
+			{ "product_name": "sulfur",
+			  "product_amount": 2,
+			  "product_type": "item"}
+		],
+		"energy": 1
+	},
+	{
+		"name": "battery",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "copper-plate",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "sulfuric-acid",
+			  "ingredient_amount": 20,
+			  "ingredient_type": "fluid"}
+		],
+		"products":
+		[
+			{ "product_name": "battery",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 5
+	},
+	{
+		"name": "engine-unit",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "pipe",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "engine-unit",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 10
+	},
+	{
+		"name": "electric-engine-unit",
+		"ingredients":
+		[
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "engine-unit",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "lubricant",
+			  "ingredient_amount": 15,
+			  "ingredient_type": "fluid"}
+		],
+		"products":
+		[
+			{ "product_name": "electric-engine-unit",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 10
+	},
+	{
+		"name": "explosives",
+		"ingredients":
+		[
+			{ "ingredient_name": "coal",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "sulfur",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "water",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "fluid"}
+		],
+		"products":
+		[
+			{ "product_name": "explosives",
+			  "product_amount": 2,
+			  "product_type": "item"}
+		],
+		"energy": 5
+	},
+	{
+		"name": "uranium-processing",
+		"ingredients":
+		[
+			{ "ingredient_name": "uranium-ore",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "uranium-235",
+			  "product_amount": 1,
+			  "product_type": "item"},
+			{ "product_name": "uranium-238",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 10
+	},
+	{
+		"name": "flying-robot-frame",
+		"ingredients":
+		[
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "battery",
+			  "ingredient_amount": 2,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 3,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electric-engine-unit",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "flying-robot-frame",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 20
+	},
+	{
+		"name": "satellite",
+		"ingredients":
+		[
+			{ "ingredient_name": "processing-unit",
+			  "ingredient_amount": 100,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "low-density-structure",
+			  "ingredient_amount": 100,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "rocket-fuel",
+			  "ingredient_amount": 50,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "solar-panel",
+			  "ingredient_amount": 100,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "accumulator",
+			  "ingredient_amount": 100,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "radar",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "satellite",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 5
+	},
+	{
+		"name": "rocket-control-unit",
+		"ingredients":
+		[
+			{ "ingredient_name": "processing-unit",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "speed-module",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "rocket-control-unit",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 30
+	},
+	{
+		"name": "low-density-structure",
+		"ingredients":
+		[
+			{ "ingredient_name": "copper-plate",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "steel-plate",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "plastic-bar",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "low-density-structure",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 30
+	},
+	{
+		"name": "rocket-fuel",
+		"ingredients":
+		[
+			{ "ingredient_name": "solid-fuel",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "rocket-fuel",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 30
+	},
+	{
+		"name": "rocket-part",
+		"ingredients":
+		[
+			{ "ingredient_name": "rocket-control-unit",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "low-density-structure",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "rocket-fuel",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "rocket-part",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 3
+	},
+	{
+		"name": "nuclear-fuel",
+		"ingredients":
+		[
+			{ "ingredient_name": "rocket-fuel",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "uranium-235",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "nuclear-fuel",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 60
+	},
+	{
+		"name": "uranium-fuel-cell",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "uranium-235",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "uranium-238",
+			  "ingredient_amount": 19,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "uranium-fuel-cell",
+			  "product_amount": 10,
+			  "product_type": "item"}
+		],
+		"energy": 10
+	},
+	{
+		"name": "nuclear-fuel-reprocessing",
+		"ingredients":
+		[
+			{ "ingredient_name": "used-up-uranium-fuel-cell",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "uranium-238",
+			  "product_amount": 3,
+			  "product_type": "item"}
+		],
+		"energy": 50
+	},
+	{
+		"name": "kovarex-enrichment-process",
+		"ingredients":
+		[
+			{ "ingredient_name": "uranium-235",
+			  "ingredient_amount": 40,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "uranium-238",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "uranium-235",
+			  "product_amount": 41,
+			  "product_type": "item"},
+			{ "product_name": "uranium-238",
+			  "product_amount": 2,
+			  "product_type": "item"}
+		],
+		"energy": 50
+	},
+	{
+		"name": "discharge-defense-remote",
+		"ingredients":
+		[
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "discharge-defense-remote",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "player-port",
+		"ingredients":
+		[
+			{ "ingredient_name": "iron-plate",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "iron-gear-wheel",
+			  "ingredient_amount": 5,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "electronic-circuit",
+			  "ingredient_amount": 10,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "player-port",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	},
+	{
+		"name": "artillery-targeting-remote",
+		"ingredients":
+		[
+			{ "ingredient_name": "processing-unit",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"},
+			{ "ingredient_name": "radar",
+			  "ingredient_amount": 1,
+			  "ingredient_type": "item"}
+		],
+		"products":
+		[
+			{ "product_name": "artillery-targeting-remote",
+			  "product_amount": 1,
+			  "product_type": "item"}
+		],
+		"energy": 0.5
+	}]
+}
