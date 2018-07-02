@@ -1,6 +1,6 @@
 #+Title: ReadMe
 
-* Command line
+* hacktorio
 
 Currently there are four functions wired out onto a command line. 
 
@@ -47,4 +47,71 @@ It's help looks like this
     Return the id of the item with given name
 
     -n --node-name=STRING  The item name
+#+END_SRC
+
+** Create Dot
+
+With this function you get a .dot file, containing the build graph of
+an item. That item is identified by it's node id, which is an integer
+number. 
+
+#+BEGIN_SRC bash
+hacktorio create-dot -n 4
+#+END_SRC
+
+This produces `/tmp/assembling-machine-1.dot`, unfortunately currently
+it's hardwired to `/tmp` and the item's name. You can create a .png
+image if you have the graphviz tools installed via:
+
+#+BEGIN_SRC bash
+dot -Tpng -o /tmp/assembling-machine-1.png /tmp/assembling-machine-1.dot
+#+END_SRC
+
+** Name from id
+
+To get the name of an item from its id, use this function:
+
+#+BEGIN_SRC bash
+hacktorio name-from-id -n 4
+#+END_SRC
+
+Which should return `assembling-machine-1`.
+
+** Id from name
+
+The other way round, to get the id of an item from its name, use this
+function:
+
+#+BEGIN_SRC bash
+hacktorio id-from-name -n assembling-machine-1
+#+END_SRC
+
+This should return `4`. Note, that you have to type the exact name. 
+
+** Combined Amount
+
+The combined amount of an item returns the amount of each atomic item,
+that is needed in order to produce one of the given item. E.g. for one
+`iron-gear-wheel` you need two `iron-plate`. So,
+
+#+BEGIN_SRC bash
+hacktorio combined-amount -n 69
+#+END_SRC
+
+should return 11.5, as it is build in total of 11.5 `iron-plate`. 
+
+** Example usage
+
+#+BEGIN_SRC bash
+# ./hacktorio id-from-name -n iron-gear-wheel
+Just 2
+
+# ./hacktorio combined-amount -n 2
+[("iron-plate",2.0)]
+
+# ./hacktorio name-from-id -n 69
+Just "fast-transport-belt"
+
+# ./hacktorio combined-amount -n 69
+[("iron-plate",11.5)]
 #+END_SRC
