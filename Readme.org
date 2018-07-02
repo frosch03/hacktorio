@@ -67,6 +67,10 @@ image if you have the graphviz tools installed via:
 dot -Tpng -o /tmp/assembling-machine-1.png /tmp/assembling-machine-1.dot
 #+END_SRC
 
+Which produces:
+
+[[file:assembling-machine-1.png]]
+
 ** Name from id
 
 To get the name of an item from its id, use this function:
