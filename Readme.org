@@ -118,4 +118,9 @@ Just "fast-transport-belt"
 
 # ./hacktorio combined-amount -n 69
 [("iron-plate",11.5)]
+
+# ./hacktorio create-dot -n 191
+# dot -Tpng -o /tmp/rocket-silo.png /tmp/rocket-silo.dot
 #+END_SRC
+
+[[file:rocket-silo.png]]
