@@ -119,8 +119,26 @@ Just "fast-transport-belt"
 # ./hacktorio combined-amount -n 69
 [("iron-plate",11.5)]
 
+# ./hacktorio name-from-id -n 191
+Just "rocket-silo"
+
+# ./hacktorio combined-amount -n 191
+[ ("iron-plate",6100.0)
+, ("copper-plate",8600.0)
+, ("steel-plate",1200.0)
+, ("water",10000.0)
+, ("coal",400.0)
+, ("stone",1000.0)
+, ("lubricant",3000.0)
+, ("iron-ore",100.0)
+, ("petroleum-gas",8000.0)
+, ("sulfuric-acid",1000.0)
+]
+
 # ./hacktorio create-dot -n 191
 # dot -Tpng -o /tmp/rocket-silo.png /tmp/rocket-silo.dot
 #+END_SRC
+
+Produces this build graph for a rocket silo:
 
 [[file:rocket-silo.png]]
